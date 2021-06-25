@@ -315,7 +315,7 @@ img{
     .container
     {
         flex-direction: column;
-        /* max-height: 1500px; */
+        max-height: 1500px;
     }
     .right
     {
