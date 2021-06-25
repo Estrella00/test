@@ -79,18 +79,21 @@ img{
 {
     display: flex;
     flex-direction: column;
-    width: 65%;
+    width: 62%;
 }
 .right
 {
     display: flex;
     flex-direction: column;
-    width: 35%;
+    width: 38%;
 }
 .image1
 {
     background: rgb(240, 236, 236);
     height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .img1
 {
@@ -121,7 +124,10 @@ img{
 .image2
 {
     background: rgb(196, 193, 193);
-    height: 300px;
+    height: 380px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .img2
 {
@@ -170,7 +176,7 @@ img{
 {
     width: 50%;
     border: 1px solid black;
-    height: 150px;
+    height: 120px;
     padding: 10px;
 }
 .areatemp-item span
@@ -179,12 +185,12 @@ img{
 }
 .areatemp-item p
 {
-    font-size: 16px;
-    padding-left: 15px;
+    font-size: 16.5px;
+    padding-left: 12px;
 }
 .areatemp-item h2
 {
-    font-size: 24px;
+    font-size: 22px;
 }
 .correct
 {
@@ -218,7 +224,6 @@ img{
     display: flex;
     flex-wrap: wrap;
 }
-
 .darkgray
 {
     background: #363636;
@@ -227,6 +232,95 @@ img{
 {
     background: rgb(116, 105, 105);
 }
+
+@media  (min-width: 1500px) and (max-width: 2000px){
+    html, body {
+        height: 100%;
+    }
+    .container
+    {
+        /* max-width: 1200px; */
+        height: 100%;
+        width:100%; 
+    }
+    .left
+    {
+        height: 100%;
+    }
+    .right
+    {
+        height: 100%;
+    }
+    .camera{
+        width:100%;
+        height: 85%;
+    }
+    .logo
+    {
+        height: 15%;
+    }
+    .image1
+    {
+        height: 80%;
+    }
+    .img1
+    {
+        width:100%;
+        height: 100%;
+    }
+    .content
+    {
+        height: 20%;
+    }
+   
+    .content li
+    {
+        width: 30%;
+    }
+  
+    .image2
+    {
+        /* height: 250px; */
+        width:100%;
+        height: 50%;
+    }
+    .img2
+    {
+        width:100%;
+        height: 100%;
+    }
+    /* 整體環境正常 */
+    .alltemp
+    {
+        height: 13%;
+        /* height: 150px; */
+    }
+
+    .alltemp_c
+    {
+        height: 13%;
+        /* height: 150px; */
+    }
+
+    /* 整體環境異常 */
+    .alltemp_w
+    {
+        height: 13%;
+        /* height: 150px; */
+    }
+   
+    .areatemp
+    {
+        height: 37%;
+    }
+    .areatemp-item
+    {
+        width: 50%;
+        height: 33.333%;
+    }
+
+}
+
 
 /* 768 */
 @media (max-width: 920px){
@@ -252,5 +346,96 @@ img{
     .image2
     {
         height: 500px;
+    }
+    .logo img
+    {
+        height:60px;
+        margin-bottom: 10px;
+
+    }
+}
+
+@media (max-width: 450px){
+    .container
+    {
+        flex-direction: column;
+    }
+    .right
+    {
+        width: 100%;
+    }
+    .left
+    {
+        width: 100%;
+        flex-direction: column-reverse;
+    }
+    .logo img
+    {
+        height:40px;
+        margin-bottom: 10px;
+
+    }
+     .image1
+    {
+        height:350px;
+    }
+    .image2
+    {
+        height:350px;
+    }
+    .camera
+    {
+        margin: 10px 0;
+    }
+    .content h3
+    {
+        font-size: 18px;
+    }
+    .areatemp-item 
+    {
+        height: 100px;
+    }
+
+    .areatemp-item p
+    {
+        font-size: 16px;
+        padding-left: 15px;
+        line-height: 1.2;
+    }
+    .areatemp-item h2
+    {
+        font-size: 20px;
+        line-height: 1.8;
+    }
+    .alltemp_c 
+    {
+        height: 120px;
+    }
+     .alltemp_c h2
+    {
+        font-size: 20px;
+        line-height: 1;
+    }
+
+    .alltemp_c p
+    {
+        font-size:16px;
+    }
+
+    
+    .alltemp_w h2
+    {
+        font-size: 20px;
+        line-height: 1;
+    }
+
+    .alltemp_w p
+    {
+        font-size:16px;
+        height: 120px;
+    }
+    .alltemp_w 
+    {
+        height: 120px;
     }
 }
