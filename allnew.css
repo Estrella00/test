@@ -1,0 +1,411 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+body
+{
+    font-size: 24px;
+    line-height: 36px;
+}
+html, body {
+    height: 100%;
+    max-width:2000px;
+    max-height: 1000px;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+  }
+
+*,*::before,*::after{
+   box-sizing: border-box;
+}
+  
+
+
+/* 圖片可能會用到 */
+.block
+{
+    display: block;
+}
+.all
+{   width:100%; 
+    height: 100%;
+}
+.container
+{
+    /* max-width: 2000px; */
+ height: 100%;
+    margin: 0 auto;
+    display: flex;
+    
+}
+.left
+{
+    display: flex;
+    flex-direction: column;
+    width: 62%;
+    height: 100%;
+}
+.right
+{
+    display: flex;
+    flex-direction: column;
+    width: 38%;
+    height: 100%;
+}
+.camera{
+    width:100%;
+    height: 85%;
+}
+.logo
+{
+    height: 15%;
+    display: flex;
+    align-items: center;
+}
+.image1
+{
+    background: rgb(240, 236, 236);
+    /* height: 600px; */
+    text-align: center;
+    width:100%;
+    height: 80%;
+}
+.img1
+{
+    width:100%;
+    height: 100%;
+}
+.content
+{
+    background: black;
+    padding-top: 20px;
+    padding-bottom: 50px;
+    height: 20%;
+}
+.content ul
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.content li
+{
+    width: 30%;
+}
+.content h3
+{
+    color: white;
+}
+
+.image2
+{
+    background: rgb(196, 193, 193);
+    /* height: 250px; */
+    width:100%;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.img2
+{
+    width:100%;
+    height: 100%;
+}
+ /* 整體環境正常 */
+ .alltemp
+{
+    height: 13%;
+    /* height: 150px; */
+    padding-left: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background: #363636;
+}
+
+.alltemp_c
+{
+    height: 13%;
+    /* height: 150px; */
+    padding-left: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background: #363636;
+}
+.alltemp_c h2
+{
+    color:#0ec40d;
+}
+
+ .alltemp_c p
+ {
+     color:#fbfbfb;
+     font-size:20px;
+ }
+
+ /* 整體環境異常 */
+ .alltemp_w
+{
+    height: 13%;
+    /* height: 150px; */
+    padding-left: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background: #363636;
+}
+.alltemp_w h2
+{
+    color:#f8c300;
+}
+
+ .alltemp_w p
+ {
+     color:#fbfbfb;
+     font-size:20px;
+ }
+.areatemp
+{
+    height: 37%;
+}
+.areatemp-item
+{
+    width: 50%;
+    border: 1px solid black;
+    /* height: 150px; */
+    padding: 10px;
+    height: 33.333%;
+}
+.areatemp-item span
+{
+    color: white;
+}
+.areatemp-item p
+{
+    font-size: 16.5px;
+    padding-left: 12px;
+}
+.areatemp-item h2
+{
+    font-size: 22px;
+}
+.correct
+{
+    background: rgb(116, 105, 105);
+}
+.correct h2
+{
+    color:#0ec40d;
+}
+
+.correct p
+{
+    color:#fbfbfb;
+}
+
+.wrong
+{
+    background: #ea1100;
+}
+.wrong h2
+{
+    color:#f8c300;
+}
+.wrong p
+{
+    color:#fbfbfb;
+}
+
+.areatemp
+{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.darkgray
+{
+    background: #363636;
+}
+.gray
+{
+    background: rgb(116, 105, 105);
+}
+
+/* ipad */
+@media (max-width: 950px){
+    .container
+    {
+        flex-direction: column;
+    }
+    .right
+    {
+        width: 100%;
+    }
+    .left
+    {
+        width: 100%;
+        flex-direction: column-reverse;
+        margin: -20px 0 20px 0;
+    }
+    .camera
+    {
+        margin: 10px 0;
+    }
+    .logo img
+    {
+       height: 100%;
+    }
+    .logo 
+    {
+        height: 7%;
+        margin-bottom: 10px;
+
+    }
+}
+
+/* phone */
+@media (max-width: 450px){
+    .container
+    {
+        flex-direction: column;
+        /* max-height: 1500px; */
+    }
+    .right
+    {
+        width: 100%;
+        /* height:50%; */
+        /* margin-top: -120px; */
+        height: 600px;
+    }
+    .left
+    {
+        width: 100%;
+        flex-direction: column-reverse;
+        margin: -10px 0 15px 0;
+        height: 800px;
+        
+    }
+     .image1
+    {
+        background: rgb(240, 236, 236);
+        /* height: 600px; */
+        text-align: center;
+        width:100%;
+        height: 70%;
+    }
+    .camera
+    {
+        margin: 10px 0;
+    }
+    .img1
+    {
+        width:100%;
+        height: 100%;
+    }
+    .content
+    {
+        height: 25%;
+    }
+    .content h3
+    {
+        font-size: 18px;
+    }
+
+    /* .logo img
+    {
+       height: 100%;
+    } */
+    .logo 
+    {
+        height: 5.5%;
+        margin-bottom: 10px;
+    }
+    .areatemp-item
+    {
+        width: 50%;
+        border: 1px solid black;
+        /* height: 150px; */
+        padding: 5px;
+        height: 33.333%;
+    }
+
+    .areatemp-item p
+    {
+        font-size: 14px;
+        padding-left: 15px;
+    }
+    .areatemp-item h2
+    {
+        font-size: 18px;
+        line-height: 1;
+    }
+     .alltemp_c h2
+    {
+        font-size: 20px;
+        line-height: 1;
+    }
+
+    .alltemp_c p
+    {
+        font-size:16px;
+    }
+
+    
+    .alltemp_w h2
+    {
+        font-size: 20px;
+        line-height: 1;
+    }
+
+    .alltemp_w p
+    {
+        font-size:16px;
+    }
+}
