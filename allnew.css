@@ -55,7 +55,6 @@ body
 html, body {
     height: 100%;
     max-width:2000px;
-    max-height: 1000px;
 }
 
 img{
@@ -74,17 +73,13 @@ img{
 {
     display: block;
 }
-.all
-{   width:100%; 
-    height: 100%;
-}
 .container
 {
-    /* max-width: 2000px; */
- /* height: 100%; */
+    /* max-width: 1200px; */
+    height: 100%;
+    width:100%; 
     margin: 0 auto;
     display: flex;
-    
 }
 .left
 {
@@ -312,10 +307,6 @@ img{
 
 /* phone */
 @media (max-width: 450px){
-    html, body {
-        max-width:2000px;
-        max-height: 1000px;
-    }
     .container
     {
         flex-direction: column;
@@ -323,17 +314,14 @@ img{
     .right
     {
         width: 100%;
-        /* height:50%; */
-        /* margin-top: -120px; */
-        height: 600px;
+        margin-top: -120px;
     }
     .left
     {
         width: 100%;
         flex-direction: column-reverse;
-        margin: -10px 0 15px 0;
-        height: 800px;
-        
+        margin: -20px 0 20px 0;
+        height: 80%;
     }
      .image1
     {
@@ -341,30 +329,21 @@ img{
         /* height: 600px; */
         text-align: center;
         width:100%;
-        height: 70%;
+        height: 60%;
     }
     .camera
     {
         margin: 10px 0;
-    }
-    .img1
-    {
-        width:100%;
-        height: 100%;
-    }
-    .content
-    {
-        height: 25%;
     }
     .content h3
     {
         font-size: 18px;
     }
 
-    /* .logo img
+    .logo img
     {
        height: 100%;
-    } */
+    }
     .logo 
     {
         height: 5.5%;
@@ -381,12 +360,12 @@ img{
 
     .areatemp-item p
     {
-        font-size: 14px;
+        font-size: 16px;
         padding-left: 15px;
     }
     .areatemp-item h2
     {
-        font-size: 18px;
+        font-size: 20px;
         line-height: 1;
     }
      .alltemp_c h2
