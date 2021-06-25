@@ -134,7 +134,7 @@ function TempData(x1,y1,x2,y2,x3,y3,x4,y4,x5,y5,x6,y6){
  
   }
 
-  TempData(1,20,2,30,1,50,1,80,1,1,1,1);
+  TempData(1,20,2,30,1,50,1,80);
 
 
 
